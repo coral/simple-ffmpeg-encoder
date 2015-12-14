@@ -5,6 +5,7 @@ This project uses your capture card to record video onto disk, acting as a MP4 r
 
 To test this:
 - Make sure you have installed [Node.js](https://nodejs.org/en/download/)
+- Navigate your commandline to the root of the project and do "npm install"
 - Make sure you have FFmpeg installed (and know the path)
 - Edit index.js at line 5, fill in the absolute path to your FFmpeg binary
 - Run: FFmpeg -i test.avi -f decklink -list_devices 1 dummy
