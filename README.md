@@ -12,3 +12,5 @@ To test this:
 - Use the output name and replace DeckLink Mini Monitor with your capture card, then run: ffmpeg -i test.avi -f decklink -list_formats 1 'DeckLink Mini Monitor'
 - Edit ffmpeg-command and change your card in the beginning to get the right settings
 - Start with node index.js
+- Navigate to http://127.0.0.1:3050 (or your host's IP if you're deploying remote)
+- Watch video, be happy
