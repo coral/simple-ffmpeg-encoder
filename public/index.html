@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simple Encoder Test</title>
+
+  <link rel="stylesheet" type="text/css" href="/css/site.css">
+  <link rel="stylesheet" type="text/css" href="/plugins/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/plugins/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="/plugins/video.js/dist/video-js.css">
+  
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .info {
+      background-color: #eee;
+      border: thin solid #333;
+      border-radius: 3px;
+      padding: 0 5px;
+      text-align: center;
+    }
+
+    .video-js {
+      margin: 40px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header clearfix">
+
+      <h3 class="text-muted">Simple Encoder</h3>
+    </div>
+
+    <div class="jumbotron">
+     <video id="video"
+     class="video-js vjs-default-skin"
+     height="480"
+     width="850"
+     autoplay
+     controls>
+     <p>
+      Your browser doesn't support video. Please <a href="http://browsehappy.com/">upgrade your browser</a> to see the
+      example.
+    </p>
+    <source src="hls/out.m3u8" type="application/vnd.apple.mpegurl">
+    </video>
+  </div>
+
+</div>
+</div> <!-- /container -->
+
+
+<script src="/plugins/jquery/dist/jquery.min.js"></script>
+<script src="/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/plugins/video.js/dist/video.js"></script>
+<script src="/plugins/hls.js/dist/hls.js"></script>
+<script src="/js/videojs-hlsjs.js"></script>
+<script>
+  // fire up the plugin
+  videojs('video');
+</script>
+</body>
+</html>
