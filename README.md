@@ -8,7 +8,7 @@ To test this:
 - Navigate your commandline to the root of the project and do "npm install"
 - Make sure you have FFmpeg installed (and know the path)
 - Edit index.js at line 5, fill in the absolute path to your FFmpeg binary
-- Run: FFmpeg -i test.avi -f decklink -list_devices 1 dummy
-- Use the output name and replace DeckLink Mini Monitor with your capture card, then run: FFmpeg -i test.avi -f decklink -list_formats 1 'DeckLink Mini Monitor'
-- Edit FFmpeg-command and change your card in the beginning to get the right settings
+- Run: ffmpeg -i test.avi -f decklink -list_devices 1 dummy
+- Use the output name and replace DeckLink Mini Monitor with your capture card, then run: ffmpeg -i test.avi -f decklink -list_formats 1 'DeckLink Mini Monitor'
+- Edit ffmpeg-command and change your card in the beginning to get the right settings
 - Start with node index.js
